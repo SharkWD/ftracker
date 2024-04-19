@@ -20,7 +20,7 @@ const (
 //
 // action int — количество совершенных действий (число шагов при ходьбе и беге, либо гребков при плавании).
 func distance(action int) float64 {
-	return float64(action) * lenStep / mInKm
+	return (float64(action) * lenStep) / mInKm
 }
 
 // meanSpeed возвращает значение средней скорости движения во время тренировки.
